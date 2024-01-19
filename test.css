@@ -1,0 +1,125 @@
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: beige;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #111;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    position: fixed;
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: fixed;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  /* Icône burger */
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    position: absolute; 
+    top: 40%;
+    left: 44%;
+}
+
+.pres
+{
+    display: flex;
+    background-color: beige;
+    margin-bottom: 1px solid black;
+}
+.coord{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    width: 200px;
+    height: 200px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.encadre {
+  background-color: #f5f3e6;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px; /* Espacement entre les encadrés */
+  border-bottom: 2px solid #a3947d; /* Trait de séparation */
+}
+
+.encadre2 {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px; /* Espacement entre les encadrés */
+  border-bottom: 1px solid black; /* Trait de séparation */
+}
+
+.cadre {
+  display: flex; /* Utilisation de flexbox pour disposer les éléments en ligne */
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.partie1, .partie2 {
+  flex: 1; /* Chaque partie prendra une proportion égale de l'espace disponible */
+  padding: 20px; /* Ajoutez du rembourrage pour l'espace intérieur du cadre */
+  border: 0px solid #000; /* Bordure pour la séparation */
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.partie1 {
+  border-right: none; /* Supprime la bordure à droite de la première partie */
+}
